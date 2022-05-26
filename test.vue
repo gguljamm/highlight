@@ -23,7 +23,7 @@ const replaceText = (text) => {
   }
   const reg = bodyText.match(/([A-Z]{3,}-\d+)/);
   if (reg) {
-    bodyText = bodyText.replaceAll(reg[0], `<a class="underline text-orange-500" href="https://jira.abouthere.kr/secure/RapidBoard.jspa?rapidView=558&projectKey=CTF&view=detail&selectedIssue=${reg[0]}" target="_blank">${reg[0]}</a>`);
+    bodyText = bodyText.replaceAll(reg[0], `<a class="underline text-orange-500" href="지라URL/secure/RapidBoard.jspa?rapidView=558&projectKey=CTF&view=detail&selectedIssue=${reg[0]}" target="_blank">${reg[0]}</a>`);
   }
   let newText = '';
   const t = searchText.value.trim();
